@@ -99,6 +99,7 @@
   .account_section {
     margin-top: 1.5rem;
     z-index: 5;
+    position: relative;
   }
   .options {
     width: 100px;
@@ -374,6 +375,8 @@
     .options {
       width: 65px;
       height: 80px;
+      position: absolute;
+      right: 1.58rem;
     }
     .account_links {
       font-size: 0.7rem;
