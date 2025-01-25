@@ -366,7 +366,7 @@
     }
     .shopping_cart{
       width: 100%;
-      height: 92vh;
+      height: 90.9vh;
     }
     /*account section(logout/profile)section*/
     .account_section {
@@ -377,7 +377,7 @@
       width: 65px;
       height: 80px;
       position: absolute;
-      right: 0.2rem;
+      right: 0.8rem;
     }
     .account_links {
       font-size: 0.7rem;
