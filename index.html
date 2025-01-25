@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FloraHub-Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="navbar">
+        <div class="heading">
+          <!--used for layouting the title florahub-->
+          <h2 class="title">FloraHub</h2>
+        </div>
+        <div class="responsive_label">
+          <!--useful only in media query for responsiveness on mobile phone used to get control of categories section-->
+          <input type="checkbox" id="checkbox_for_links" unchecked />
+          <label for="checkbox_for_links" class="label_for_links">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="icon"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+                d="M5 7h14M5 12h14M5 17h14"
+              />
+            </svg>
+          </label>
+          <div class="categories">
+            <!--categories means different choices of links that can be navigated-->
+            <a href="" class="categories_links animate">Home</a>
+            <a href="" class="categories_links animate">Shop</a>
+            <a href="" class="categories_links animate">About Us</a>
+            <a href="" class="categories_links animate">Contact Us</a>
+          </div>
+        </div>
+        <div class="cart">
+          <svg
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="icon"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+            />
+            <span class="cart_indicator">0</span>
+          </svg>
+        </div>
+        <div class="account_section">
+          <!--this is the account section where there is a user logo and options for profile &log out-->
+          <input type="checkbox" id="checkbox_for_account" />
+          <label for="checkbox_for_account">
+            <svg
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="icon"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0 0a8.949 8.949 0 0 0 4.951-1.488A3.987 3.987 0 0 0 13 16h-2a3.987 3.987 0 0 0-3.951 3.512A8.948 8.948 0 0 0 12 21Zm3-11a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+            </svg>
+          </label>
+          <div class="options">
+            <a href="" class="account_links">profile</a>
+            <a href="" class="account_links">log out</a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <!--this includes include shop now button and description of florahub-->
+        <h1 class="text res">Shop Our Plants</h1>
+        <p class="text res">
+          Discover the perfect greenery for your home and garden.
+        </p>
+        <button class="button">Shop Now</button>
+      </div>
+    </div>
+    <div class="shopping_cart">
+      <div class="cart_title">
+        <h2>Shopping cart</h2>
+      </div>
+      <div class="cart_products"></div>
+      <div class="cart_buttons">
+        <button class="buttons_in_cart total">Total</button>
+        <button class="buttons_in_cart close" onclick="close()">Close</button>
+      </div>
+    </div>
+    <div class="product_container">
+      <div class="product_heading">
+        <h2>Our Products</h2> <br>
+      <p>Choose rare plants & suitable accessories for your gardening.</p>
+      </div>
+      <div class="products">
+      </div>
+    </div>
+  </body>
+</html>
